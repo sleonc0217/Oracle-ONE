@@ -1,0 +1,46 @@
+<meta charset="UTF-8" />
+
+<h1>JUEGO DE LOTERÍA</h1>
+
+
+<script>
+
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarlinea();
+    }
+
+    function loteria(n){
+
+        return Math.round(Math.random()*n);
+        
+    }
+
+    var numeroPensado=loteria(10);
+    var numeroLanzado=parseInt(prompt("Digite un numero: "));
+
+    if(numeroLanzado==numeroPensado){
+
+        imprimir("Tu numero salio en la lotería!");
+
+    }else{
+        if (numeroPensado>numeroLanzado){ 
+            
+            imprimir("Tu numero no salio en la lotería... Salio un numero más bajo");
+
+        }else{
+
+            imprimir("Tu numero no salio en la lotería... Salio un numero más alto");
+
+        }
+
+    }
+
+
+</script>
