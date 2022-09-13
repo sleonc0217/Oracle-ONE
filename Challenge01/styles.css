@@ -1,0 +1,335 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body{
+    
+    background: #F3F5FC;
+    width: 100%;
+    height: 1024px;
+    font-family: 'Inter';
+    font-style: normal;
+    
+}
+.display{
+    position:absolute;
+    width: 26%;
+    height: 944px;
+    left: 72%;
+    top: 65px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 32px;
+
+}
+.titulo-display{
+    padding-left: 173px;
+    font-size: 20px;
+}
+.muneco{
+    position: absolute;
+    width: 23%;
+    height: 304px;
+    left: 74%;
+    top: 270px;
+    z-index: 3;
+}
+h2{
+    width: 336px;
+    height: 58px;
+}
+h3{
+    width: 336px;
+    height: 48px;
+}
+.titulo-display{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 579px;
+    padding-bottom: 307;
+    text-align: center;
+}
+.textarea{
+    font-style: normal;
+    width: 95.9%;    
+    height: 53px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    margin-left: 10px;
+    margin-right: 5px;
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    
+}
+.textareaModif{
+    position: relative;
+    top: 5cm;
+    height: 510px;
+}
+
+
+
+.logo{
+    position: absolute;
+    margin-top: 40px;
+    margin-left:40px;
+}
+.entrada{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 6%;
+    top: 168px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #0A3871;
+}
+.entrada::placeholder{
+    color: #0A3871;
+    opacity: 1;
+}
+.botonera{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 3%;
+    top: 885px;
+}
+.centrador{
+    display: flex;
+    justify-content: center;
+}
+
+.encriptar{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.desencriptar{
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+}
+.desencriptar p{
+    width: 280px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    margin: 0 auto;
+}
+
+.encriptar p{
+    width: 280px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color:#FFFFFF;
+    margin: 0 auto;
+}
+.div-aviso{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 4%;
+    top: 851px;
+   
+}
+.div-aviso p{
+    width: 205px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 28px;
+}
+.aviso{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+}
+.copiar{
+    box-sizing: border-box;
+    padding: 24px;
+    position: absolute;
+    background-color: transparent;
+    width: 21%;
+    height: 67px;
+    left: 74.5%;
+    top: 885px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;  
+    color: #0A3871;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    body{
+        width: 100%;
+        height:1174px;
+    }
+    .entrada{
+
+        width: 90%;
+        height: 288px;
+        left: 40px; 
+        top: 240px;
+    }
+    .muneco{
+        display: none;
+    }
+    .div-aviso{
+
+        width: 229px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    }
+    .botonera{
+        width: 88.8%;
+        height: 67px;
+        left: 40px;
+        top: 870px;
+    }
+    .encriptar, .desencriptar{
+        width: 43%;
+    }
+    .display{
+        width: 88.8%;
+        height: 133px;
+        left: 6%;
+        top: 1001px;
+    }
+    .copiar{
+        top: 1064px;
+        margin-left: 28%;
+        left: -5%;
+        width: 50%;
+        
+    }
+    .titulo-display{
+        padding-top: 0;
+        font-size: 20px;
+        margin-bottom: 0;
+
+    }
+    .textarea{
+        height: 42px; 
+    }
+
+    .textareaModif{
+        top: 0cm;
+        height: 49px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+@media screen and (max-width:767px)  {
+    body{
+        height:1300px;
+    }
+    .entrada{
+        font-size: 30px;
+        width: 75%;
+        height: 48px;
+        left: 40px; 
+        top: 240px;
+    }
+
+    .encriptar, .desencriptar{
+        position: absolute;
+        width:88.8%;
+        left:3%;
+    }
+    .encriptar{
+        top: 0;
+    }
+    .desencriptar{
+        top: 100px;
+    }
+    .textarea{
+        margin: 0;
+        height: 140px;
+    }
+    .textareaModif{
+        top: 6%;
+    }
+
+    .div-aviso{
+        top:688px;
+    }
+    .entrada{
+        font-size: 20px;
+    }
+    .botonera{
+        height: 213px;
+        top: 758px;
+        display: flex;
+        justify-content: center;
+        width: 86.8%;
+    }
+    .display{
+        height:270px;
+    }
+    .copiar{
+        top:1172px;
+    }
+    
+}
